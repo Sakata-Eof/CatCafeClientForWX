@@ -1,0 +1,15 @@
+<view class="container">
+  <view class="title">登录</view>
+  <form bindsubmit="handleLogin">
+    <view class="input-group">
+      <label>邮箱</label>
+      <input type="text" name="userEmail" required />
+    </view>
+    <view class="input-group">
+      <label>密码</label>
+      <input type="password" name="userPassword" required />
+    </view>
+    <button type="primary" formType="submit">登录</button>
+    <view class="link" bindtap="navigateToRegister">注册</view>
+  </form>
+</view>

@@ -1,0 +1,28 @@
+<!-- 
+  <scroll-view scroll-y style="height:100vh">
+
+    <view class="index2">
+      <view bind:tap="onOrder">开启点餐之旅-></view>
+      <button bindtap='catcat' type="primary">快来看小猫！</button>
+    </view>
+  </scroll-view> -->
+  <scroll-view scroll-y style="height: 100vh;">
+  <view class="index-container">
+    <!-- 背景容器 -->
+    <view class="background">
+      <!-- 按钮容器 -->
+      <view class="button-container">
+        <!-- 点餐之旅按钮 -->
+        <button class="action-button" bindtap="onOrder">
+          开启点餐之旅 →
+        </button>
+
+        <!-- 小猫按钮 -->
+        <button class="action-button" bindtap="catcat">
+          快来看小猫！
+        </button>
+      </view>
+    </view>
+  </view>
+</scroll-view>
+

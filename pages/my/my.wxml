@@ -1,0 +1,9 @@
+<view class="container">
+  <view class="user-section" wx:if="{{token}}">
+    <text class="user-id">当前用户ID：{{userID}}</text>
+    <button class="logout-button" bindtap="logout">退出登录</button>
+  </view>
+  <view class="login-section" wx:else>
+    <button class="login-button" bindtap="login">登录</button>
+  </view>
+</view>

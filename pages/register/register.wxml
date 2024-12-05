@@ -1,0 +1,67 @@
+<!-- <view class="container">
+  <view class="title">注册</view>
+  <radio-group bindchange="bandleChange">
+  <radio color="red" value="male"> 男</radio>
+  <radio color="red" value="female"> 女</radio>
+</radio-group>
+  <form bindsubmit="handleRegister">
+    <view class="input-group">
+      <label>邮箱</label>
+      <input type="text" name="userEmail" placeholder="请输入邮箱" required />
+    </view>
+    <view class="input-group">
+      <label>昵称</label>
+      <input type="text" name="userName" placeholder="请输入昵称" required />
+    </view>
+    
+    <view class="input-group">
+      <label>密码</label>
+      <input type="password" name="userPassword" placeholder="请输入密码" required />
+    </view>
+    <view class="input-group">
+      <label>确认密码</label>
+      <input type="password" name="confirmPassword" placeholder="请确认密码" required />
+    </view>
+    <button type="primary" formType="submit">注册</button>
+  </form>
+</view> -->
+<view class="container">
+  <view class="title">注册</view>
+  
+  <form bindsubmit="handleRegister">
+
+    <view class="input-group">
+      <label>邮箱</label>
+      <input type="text" name="userEmail"  />
+    </view>
+
+    <view class="input-group">
+      <label>昵称</label>
+      <input type="text" name="userName"  />
+    </view>
+
+    <view class="input-group">
+      <label>密码</label>
+      <input type="password" name="userPassword"  />
+    </view>
+
+    <view class="input-group">
+      <label>确认密码</label>
+      <input type="password" name="confirmPassword"  />
+    </view>
+
+    <view class="radio-group" bindchange="bandleChange">
+      <view class="radio-item">
+        <radio color="red" value="male"></radio>
+        <text class="radio-label">男</text>
+      </view>
+      <view class="radio-item">
+        <radio color="red" value="female"></radio>
+        <text class="radio-label">女</text>
+      </view>
+    </view>
+
+    <button type="primary" formType="submit">注册</button>
+  
+  </form>
+</view>

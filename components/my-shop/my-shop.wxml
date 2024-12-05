@@ -1,0 +1,28 @@
+<view class="cpnshop">
+  <!-- 这只是一个遮罩，没别的用处 -->
+  <view></view>
+  <!-- 这是购物车中的内容 -->
+  <view>
+    <view class="cpnheader">
+      <view><text style="margin-left:20rpx">已购商品</text></view>
+      <view>
+        <view class="cpnhdright" bind:tap="handleCancle">
+          <icon class="iconfont icon-dustbin" />
+          <view>清空购物车</view>
+        </view>
+      </view>
+    </view>
+
+    <scroll-view scroll-y="true" class="{{cpnlist.length > 4 ? 'cpnscroll' : ''}}">
+      <block wx:for="{{cpnlist}}" wx:key="{{index}}">
+        <view class="cpncontent">
+          <view class="cpnname">{{item.name}}</view>
+          <view class="cpnprice">￥{{item.price}}.00</view>
+          <icon class="iconfont icon-jianhao" bind:tap="handleReducenum" data-cpnreduce="{{index}}"/>
+          <view>{{item.number}}</view>
+          <icon class="iconfont icon-jiahao iconright" bind:tap="handleAddnum" data-cpnadd="{{index}}"/>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>

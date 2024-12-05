@@ -1,0 +1,16 @@
+@import "/style/iconfont.wxss";
+
+.cpnshop{position: fixed;left: 0vw;top: 0vw;height: 90vh;width: 100vw;display: flex;flex-direction: column;}
+.cpnshop>view:first-child{flex: 1;background-color: rgba(5, 5, 5, 0.308);}
+.cpnshop>view:last-child{background-color: rgb(211, 211, 211);}
+
+.cpnheader{display: flex;height: 60rpx;align-items: center;font-size: 25rpx;}
+.cpnheader>view:first-child{border-left: 10rpx solid rgb(255, 195, 66);flex: 1;margin: 0 15rpx;}
+.cpnhdright{display: flex;flex: 1;align-items: center;height: 100%;}
+
+/*这里进行商品的样式*/
+.cpnscroll{height: 500rpx;}
+.cpncontent{display: flex;align-items: center;height: 110rpx;background-color: rgb(255, 255, 255);border-bottom: 3rpx solid rgb(141, 141, 141);}
+.cpncontent>.cpnname{flex: 1;margin: 0 30rpx;}
+.cpnprice{color: rgb(255, 174, 24);margin: 0 20rpx;}
+.iconright{margin-right: 20rpx;}

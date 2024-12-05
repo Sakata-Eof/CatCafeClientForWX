@@ -1,0 +1,11 @@
+<view style="background:#fff">
+  <view class="cpnheader"><text>订单详情</text></view>
+  <view wx:for="{{definitedata}}" class="cpncontent">
+    <view>{{item.name}}</view>
+    <view><text class="numfont"> x{{item.number}}\n</text><text>￥{{item.price}}</text></view>
+  </view>
+  <view class="cpnfooter">
+    <view>总计</view>
+    <view><text>￥{{definitegoods}}</text></view>
+  </view>
+</view>

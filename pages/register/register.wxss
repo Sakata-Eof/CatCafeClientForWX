@@ -1,0 +1,127 @@
+/* common.wxss
+.container {
+    padding: 20px;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #1aad19;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  /* login.wxss specific styles */
+  /* .link {
+    text-align: center;
+    display: block;
+    margin-top: 15px;
+    color: #1aad19;
+    text-decoration: none;
+  } */ 
+/* app.wxss */
+.container {
+  padding: 20px;
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: bold;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 20px;
+  font-size: 20px;  /* 增加字体 */
+  
+
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  box-sizing: border-box;
+}
+
+/* .input-group input::placeholder {
+  font-size: 10px;
+  color: #aaa;
+} */
+
+.radio-group {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.radio-item {
+  display: flex;
+  align-items: center;
+}
+
+.radio-label {
+  margin-left: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+button[type="primary"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #1aad19;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="primary"]:hover {
+  background-color: #179b16;
+}

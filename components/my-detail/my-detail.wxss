@@ -1,0 +1,9 @@
+.cpnheader{font-size: 30rpx;color: rgb(109, 109, 109);}
+
+.cpncontent{display: flex;justify-content: space-between;align-items: center;border-bottom: 3rpx solid rgb(190, 190, 190);height: 110rpx;}
+.cpncontent>view{margin: 0 30rpx;font-size: 30rpx;}
+.numfont{color: rgb(109, 109, 109);}
+
+.cpnfooter{display: flex;justify-content: space-between;align-items: center;border-bottom: 3rpx solid rgb(190, 190, 190);height: 110rpx;}
+.cpnfooter>view{margin: 0 30rpx;font-size: 30rpx;}
+.cpnfooter text{color: orange;}

@@ -1,0 +1,80 @@
+<!-- <view class="container">
+  <view class="order-history">
+    <block wx:for="{{orderList}}" wx:key="orderID">
+      <view class="order-card">
+        <view class="order-header">
+          <text class="order-id">订单号：{{item.orderID}}</text>
+          <text class="order-time">{{item.orderTime[1]}}月{{item.orderTime[2]}}日</text>
+        </view>
+
+        <view class="order-products">
+          <block wx:for="{{products}}" wx:for-item="i">
+            <view wx:if="{{item.productCode == i.productID}}" class="product-item">
+              <view class="product-details">
+                <view>商品：{{i.productName}}</view>
+                <view>个数：{{item.count}}</view>
+                <view>单价：￥{{item.productPrice}}
+                </view>
+                <image class="product-image" src="http://127.0.0.1:8080/img/{{i.productImage}}" mode="aspectFit"></image>
+              </view>
+            </view>
+          </block>
+          <text class="order-status">支付状态：{{item.orderPay ? '已支付' : '未支付'}}</text>
+        </view>
+
+        <view class="order-footer">
+          <text class="order-total">总价：¥{{item.productPrice * item.count}}</text>
+          <button class="pay-button" data-id="{{item.orderID}}" bindtap="payOrder">
+            {{item.orderPay ? '查看' : '支付'}}
+          </button>
+        </view>
+      </view>
+    </block>
+
+    <view wx:if="{{orderList.length === 0}}" class="no-orders">
+      <text>您还没有任何订单记录。</text>
+    </view>
+  </view>
+</view> -->
+<view class="container">
+  <!-- 订单列表 -->
+  <view class="order-history">
+    <block wx:for="{{orderList}}" wx:key="orderID">
+      <view class="order-card">
+        <!-- 订单头部信息 -->
+        <view class="order-header">
+          <text class="order-id">订单号：{{item.orderID}}</text>
+          <text class="order-time">{{item.orderTime[1]}}月{{item.orderTime[2]}}日</text>
+        </view>
+
+        <!-- 商品列表 -->
+        <view class="order-products">
+          <block wx:for="{{products}}" wx:for-item="i">
+            <view wx:if="{{item.productID == i.productID}}" class="product-item">
+              <view class="product-details">
+                <view>商品：{{i.productName}}</view>
+                <view>个数：{{item.productCount}}</view>
+                <view>单价：￥{{item.productPrice}}</view>
+              </view>
+              <image class="product-image" src="http://127.0.0.1:8080/img/{{i.productImage}}" mode="aspectFill"></image>
+            </view>
+          </block>
+          <text class="order-status">支付状态：{{item.orderPay ? '已支付' : '未支付'}}</text>
+        </view>
+
+        <!-- 订单详情 -->
+        <view class="order-footer">
+          <text class="order-total">总价：¥{{item.productPrice * item.productCount}}</text>
+          <button class="pay-button" data-id="{{item.orderID}}" bindtap="payOrder">
+            {{item.orderPay ? '查看' : '支付'}}
+          </button>
+        </view>
+      </view>
+    </block>
+
+    <!-- 无订单时的提示 -->
+    <view wx:if="{{orderList.length === 0}}" class="no-orders">
+      <text>您还没有任何订单记录。</text>
+    </view>
+  </view>
+</view>

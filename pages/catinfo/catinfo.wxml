@@ -1,0 +1,22 @@
+<view class="container">
+  <view class="header">
+    <text>猫咪信息展览</text>
+  </view>
+  
+  <block wx:for="{{cats}}" wx:key="catID">
+    <view class="cat-card">
+      <image class="cat-image" src="http://127.0.0.1:8080/img/{{item.catImage}}" mode="aspectFit"></image>
+      <view class="cat-info">
+        <text class="cat-name">{{item.catName}}</text>
+        <text class="cat-age"> 年龄: {{item.catAge}}</text>
+     
+        <text class="cat-sex"> 性别: {{item.catSex === true ? '公' : '母'}}</text>
+        <text class="cat-state"> 状态：{{item.catState === true ? '可领养' : '不可领养'}}</text>
+      </view>
+    </view>
+  </block>
+  
+  <view class="load-more" wx:if="{{hasMore}}">
+    <button bindtap="loadMore">加载更多</button>
+  </view>
+</view>

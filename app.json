@@ -1,0 +1,42 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/list/list",
+        "pages/product-list/product-list",
+        "pages/cart/cart",
+        "pages/checkout/checkout",
+        "pages/catinfo/catinfo",
+        "pages/login/login",
+        "pages/register/register",
+        "pages/my/my"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#769FCD",
+        "navigationBarTitleText": "NUAA猫咖",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "/icon/首页.png",
+                "selectedIconPath": "/icon/首页1.png"
+            },
+            {
+                "pagePath": "pages/list/list",
+                "text": "订单",
+                "iconPath": "/icon/订单.png",
+                "selectedIconPath": "/icon/订单1.png"
+            },
+            {
+              "pagePath": "pages/my/my",
+              "text": "我的",
+              "iconPath": "/icon/我的.png",
+              "selectedIconPath": "/icon/我的1.png"
+            }
+        ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

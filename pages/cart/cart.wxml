@@ -1,0 +1,20 @@
+<view class="container">
+  <view class="cart-title">购物车</view>
+  <block wx:if="{{cartItems.length > 0}}">
+    <view class="cart-item" wx:for="{{cartItems}}" wx:key="productID">
+      <image class="item-image" src="{{item.productImage}}" mode="aspectFill"></image>
+      <view class="item-info">
+        <view class="item-name">{{item.productName}}</view>
+        <view class="item-price">¥{{item.price}}</view>
+      </view>
+      <!-- 这里可以添加数量选择、删除按钮等 -->
+    </view>
+    <view class="cart-footer">
+      <view class="total-price">总价：¥{{totalPrice}}</view>
+      <button bindtap="checkout">去结算</button>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="empty-cart">购物车为空</view>
+  </block>
+</view>

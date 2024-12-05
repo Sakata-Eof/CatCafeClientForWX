@@ -1,0 +1,17 @@
+<view class="checkout-page">
+  <view class="checkout-header">
+    <text>结算页面</text>
+  </view>
+  <view class="checkout-items">
+    <block wx:for="{{cartItems}}" wx:key="productID">
+      <view class="checkout-item">
+        <text>{{item.productName}}</text>
+        <text>¥{{item.price}}</text>
+      </view>
+    </block>
+  </view>
+  <view class="checkout-total">
+    总价: ¥{{totalPrice}}
+  </view>
+  <button bindtap="submitOrder">提交订单</button>
+</view>
